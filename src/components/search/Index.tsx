@@ -15,7 +15,9 @@ const SearchBox: FC<SearchProps> = (props) => {
     }
 
     return <div className={'search-box'}>
-        <div style={{ display: 'flex', flexFlow: 'row wrap' }}>
+        KEY 搜索 默认SCAN
+        <Search placeholder="input search text" onSearch={onSearch} enterButton />
+        <div style={{ display: 'flex', flexFlow: 'row wrap', marginLeft: '5px', marginTop: '5px' }}>
             <div className={'db-selector'}>DB-0</div>
             <div className={'db-selector'}>DB-1</div>
             <div className={'db-selector'}>DB-2</div>
@@ -33,8 +35,6 @@ const SearchBox: FC<SearchProps> = (props) => {
             <div className={'db-selector'}>DB-14</div>
             <div className={'db-selector'}>DB-15</div>
         </div>
-        <Search placeholder="input search text" onSearch={onSearch} enterButton />
-
         <div className='key-list'>
             <div className='redis-key'>Key1</div>
             <div className='redis-key'>Key1</div>
@@ -43,6 +43,5 @@ const SearchBox: FC<SearchProps> = (props) => {
         </div>
     </div>
 };
-
 
 export default SearchBox;

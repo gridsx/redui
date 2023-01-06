@@ -7,7 +7,7 @@
 
 .db-selector {
     display: block;
-    width: 60px;
+    width: 68px;
     height: 20px;
     border-radius: 3px;
     margin-right: 5px;
@@ -36,5 +36,4 @@
     padding-top: 2px;
     padding-left: 20px;
     border-bottom: 1px solid lightgrey;
-    
 }
